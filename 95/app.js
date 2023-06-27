@@ -8,15 +8,16 @@
 
 let thumb = slider.querySelector('.thumb');
 
-thumb.onmousedown = function(evt) {
+thumb.onpointerdown = function(evt) {
+  thumb.setPointerCapture(evt.pointerId);
   evt.preventDefault(); // прндотвратить запуск выделения 
 
   let shiftX = evt.clientX - thumb.getBoundingClientRect().left;
 
-  document.addEventListener('mousemove', onMouseMove);
-  document.addEventListener('mouseup', onMouseUp);
+  document.addEventListener('pointermove', onPointerMove);
+  document.addEventListener('pointerup', onPointerUp);
 
-  function onMouseMove(evt) {
+  function onPointerMove(evt) {
     let newLeft = evt.clientX - shiftX - slider.getBoundingClientRect().left;
     if (newLeft < 0) newLeft = 0;
 
@@ -26,9 +27,9 @@ thumb.onmousedown = function(evt) {
     thumb.style.left = newLeft + 'px';
   }
 
-  function onMouseUp(evt) {
-    document.removeEventListener('mouseup', onMouseUp);
-    document.removeEventListener('mousemove', onMouseMove);
+  function onPointerUp(evt) {
+    document.removeEventListener('pointerup', onPointerUp);
+    document.removeEventListener('pointermove', onPointerMove);
   }
 };
 
