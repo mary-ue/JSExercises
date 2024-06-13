@@ -1,0 +1,27 @@
+img {
+  display: block;
+  max-width: 500;
+  max-height: 500;
+  object-fit: cover;
+}
+
+#goods-max {
+  margin-bottom: 20px;
+  width: 640px;
+  height: 640px;
+}
+
+.goods-min {
+  width: 200px;
+  height: 200px;
+}
+
+.goods-img-min {
+  display: flex;
+  gap: 20px;
+}
+
+.active .goods-min {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 1), 
+                0 14px 28px rgba(0, 0, 0, 0.8);
+}
