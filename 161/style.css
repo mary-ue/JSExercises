@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+.slider {
+  width: 300px;
+  position: relative;
+  border: 4px solid #caccd1;
+  margin: 100px auto;
+  /* overflow: hidden; */
+}
+
+.line {
+  position: relative;
+  height: 250px;
+  /* overflow: hidden; */
+  left: 0;
+  transition: all ease 1s;
+}
+
+.slide {
+  height: 250px;
+  float: left;
+}
+
+.w168px {
+  width: 168px;
+}
+
+.red {
+  background-color: red;
+}
+
+.w250px {
+  width: 250px;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.w80px {
+  width: 80px;
+}
+
+.grenn {
+  background-color: green;
+}
+
+.w280px {
+  width: 280px;
+}
+
+.cyan {
+  background-color: cyan;
+}
+
+.w150px {
+  width: 150px;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.w52px {
+  width: 52px;
+}
+
+.pink {
+  background-color: pink;
+}
