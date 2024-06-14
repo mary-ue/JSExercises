@@ -1,0 +1,49 @@
+.block {
+  width: 300px;
+  padding: 20px;
+  margin: 50px auto;
+  border: 1px solid #c0c0c0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #c0c0c0;
+  text-align: center;
+}
+
+.cat {
+  display: block;
+  width: 260px;
+  margin: 10px auto;
+  border: 1px solid black;
+}
+
+.hide {
+  transform: scale(0);
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
+  position: absolute;
+  opacity: 0;
+}
+
+.description > img {
+  width: 30%;
+  margin: 20px auto;
+  border: 1px solid black;
+}
+
+#show-description {
+  margin: 10px;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  background-image: url('img/arrow.png');
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 0;
+  transition: transform .2 ease-in-out;
+  cursor: pointer;
+}
+
+.active {
+  transform: rotate(180deg);
+}
