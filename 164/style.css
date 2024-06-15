@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+#slide {
+  margin: 0 auto;
+  position: relative;
+  width: 512px;
+  height: 512px;
+  border: 3px solid #c0c0c0;
+}
+
+.slide-single {
+  display: block;
+  width: 506px;
+  height: 506px;
+  position: absolute;
+  transition: all ease 1s;
+  object-fit: contain;
+  left: 0;
+  top: 0;
+}
