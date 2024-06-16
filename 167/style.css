@@ -1,0 +1,27 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* h2 {
+  padding: 10px;
+} */
+
+.header-bg {
+  margin: 30px;
+  position: relative;
+}
+
+.header-bg h2 {
+  display: inline-block;
+}
+
+.square-bg {
+  /* min-height: 40px; */
+  background-color: orange;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
