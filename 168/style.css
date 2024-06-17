@@ -1,0 +1,16 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.input-wrapper {
+  margin-bottom: 20px;
+}
+
+.elastic li.hide {
+  display: none;
+}
+
+mark {
+  background-color: aquamarine;
+}
