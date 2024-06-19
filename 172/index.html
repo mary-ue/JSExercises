@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <!-- Можно добавить  controls к video для показа стандартных кнопок -->
+  <video id="video-player" width="400" poster="./PXL_20240331_061834556.MP.jpg">
+    <source src="./PXL_20240331_060014227.mp4" type="video/mp4">
+  </video>
+
+  <div class="">
+    <progress class="progress" value="20" max="100"></progress>
+  </div>
+  <div>
+    <p id="out">0</p>
+  </div>
+
+  <div class="video">
+    <button id="play">Play</button>
+    <button id="pause">Pause</button>
+    <button id="stop">Stop</button>
+    <button id="speed-up">Speed-up</button>
+    <button id="speed-down">Speed-down</button>
+    <button id="speed-normal">Normal Speed</button>
+    <input id="volume" type="range" min="0" max="100">Sound
+  </div>
+</body>
+</html>
