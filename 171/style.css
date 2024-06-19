@@ -1,0 +1,56 @@
+#battery {
+  padding: 10px;
+  position: relative;
+  width: 300px;
+  height: 90px;
+  border: 1px solid #c0c0c0;
+  border-radius: 6px;
+}
+
+#battery::after {
+  content: '';
+  position: absolute;
+  right: -22px;
+  top: 32px;
+  display: block;
+  width: 20px;
+  height: 40px;
+  border: 1px solid #c0c0c0;
+  border-left: 3px solid #fff;
+  border-radius: 0 4px 4px 0;
+}
+
+#battery-level {
+  height: 100%;
+  width: 30%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, rgba(0, 255, 235, 1) 0%, rgba(7, 58, 187, 1) 100%);
+  transition: all ease 1s;
+}
+
+#battery-level-digit {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+}
+
+#battery-level.battery-animation {
+  animation-name: battery-charget;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes battery-charget {
+  0% {
+    width: 20px;
+  }
+  100% {
+    width: 100%;
+  }
+}
