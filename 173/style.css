@@ -1,0 +1,19 @@
+.container-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 820px;
+  margin: 0 auto;
+}
+
+.square {
+  width: 400px;
+  height: 556px;
+  background-color: aqua;
+  cursor: pointer;
+}
+
+#out {
+  font-size: 70px;
+  text-align: center;
+}
