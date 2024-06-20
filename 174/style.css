@@ -1,0 +1,29 @@
+#keyboard {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  border: 2px solid black;
+  max-width: 730px;
+  margin: 0 auto;
+}
+
+/* #keyboard::after {
+  content: '';
+  display: block;
+} */
+
+.k-key {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.k-key:hover {
+  background-color: aqua;
+}
