@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+
+<body>
+  <ul class="main__list reset-list">
+    <li class="main__item">
+      <button class="main__item-btn js-header-dropdown-btn" data-path="one">
+        <strong class="main__item-heading">Реализм</strong>
+        <span class="main__item-icon"></span>
+      </button>
+      <div class="main__dropdown js-header-drop" data-target="one">
+        <div class="main__dropdown-wrap" data-simplebar>
+          <ul class="main__drop-list reset-list">
+            <li class="main__dropdown-item"><a href="" class="main__item-link main__item-link--tintoretto"><span
+                  class="main__item-text">Тинторрето</span></a></li>
+            <li class="main__dropdown-item"><a href="" class="main__item-link main__item-link--fridrih">Фридрих</a></li>
+            <li class="main__dropdown-item"><a href="" class="main__item-link">Леонардо</a></li>
+            <li class="main__dropdown-item"><a href="" class="main__item-link">Тинторрето</a></li>
+            <li class="main__dropdown-item"><a href="" class="main__item-link">Тинторрето</a></li>
+            <li class="main__dropdown-item"><a href="" class="main__item-link">Тинторрето</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li class="main__item">
+      <button class="main__item-btn js-header-dropdown-btn" data-path="two">
+        <strong class="main__item-heading">Импрессионизм</strong>
+        <span class="main__item-icon"></span>
+      </button>
+      <div class="main__dropdown js-header-drop" data-target="two">
+        <div class="main__dropdown-wrap" data-simplebar>
+          <ul class="main__drop-list">
+            <li class="main__dropdown-item"><a href="" class="main__item-link">Тинторрето</a></li>
+            <li class="main__dropdown-item"><a href="" class="main__item-link">Фридрих</a></li>
+            <li class="main__dropdown-item"><a href="" class="main__item-link">Леонардо</a></li>
+            <li class="main__dropdown-item"><a href="" class="main__item-link">Тинторрето</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+</body>
+
+</html>
