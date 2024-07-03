@@ -1,5 +1,25 @@
 .map {
-  width: 500px;
-  height: 500px;
+  width: 800px;
+  height: 800px;
   background-color: #333;
+}
+
+[class*="map-copyrights"] {
+  display: none !important;
+}
+
+[class*="map-container"] {
+  filter: grayscale(100);
+}
+
+.icon-marker {
+  cursor: pointer;
+  position: relative;
+  transform: translate(-50%, -50%);
+  width: 75px;
+  height: 75px;
+  background-color: #000;
+  background-image: url('cat.jpg');
+  background-size: cover;
+  border-radius: 50%;
 }
