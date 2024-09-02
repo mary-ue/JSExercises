@@ -19,7 +19,7 @@
   width: 75px;
   height: 75px;
   background-color: #000;
-  background-image: url('cat.jpg');
+  /* background-image: url('cat.jpg'); */
   background-size: cover;
   border-radius: 50%;
 }

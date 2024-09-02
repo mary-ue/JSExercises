@@ -15,8 +15,9 @@ async function initMap() {
   map.addChild(new YMapDefaultSchemeLayer());
   map.addChild(new YMapDefaultFeaturesLayer());
 
-  const markerElement = document.createElement('div');
+  const markerElement = document.createElement('img');
   markerElement.className = 'icon-marker';
+  markerElement.src = 'cat.jpg';
   // markerElement.innerText = "I'm marker!";
 
   const marker = new YMapMarker(
